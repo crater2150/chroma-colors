@@ -84,26 +84,18 @@ c.colors.statusbar.command.fg = chroma['white']
 
 c.colors.statusbar.command.private.bg = chroma['bggray']
 c.colors.statusbar.command.private.fg = chroma['white']
+c.colors.statusbar.private.bg = chroma['bggray']
+c.colors.statusbar.private.fg = chroma['white']
 c.colors.statusbar.insert.bg = chroma['green']
 c.colors.statusbar.insert.fg = chroma['black']
+c.colors.statusbar.passthrough.bg = chroma['blue']
+c.colors.statusbar.passthrough.fg = chroma['black']
 
 c.colors.statusbar.normal.bg = chroma['black']
 c.colors.statusbar.normal.fg = chroma['white']
 
-# Background color of the statusbar in private browsing mode.
-# Type: QssColor
-c.colors.statusbar.private.bg = '#666666'
+c.colors.statusbar.progress.bg = chroma['white']
 
-# Foreground color of the statusbar in private browsing mode.
-# Type: QssColor
-c.colors.statusbar.private.fg = 'white'
-
-# Background color of the progress bar.
-# Type: QssColor
-c.colors.statusbar.progress.bg = 'white'
-
-# Foreground color of the URL in the statusbar on error.
-# Type: QssColor
 c.colors.statusbar.url.fg = chroma['lightblue']
 c.colors.statusbar.url.hover.fg = chroma['yellow']
 c.colors.statusbar.url.success.http.fg = chroma['lightblue']

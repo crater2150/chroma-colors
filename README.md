@@ -24,9 +24,9 @@ neomuttrc
 Copy `chroma.vim` to your `colors` dir or use your favorite plugin manager. The
 vim theme is in a separate repo, so most plugin managers can clone that directly
 
-## qutebrowser
+## qutebrowser (>= 1.1.0)
 
-copy the contents of `chroma.config.py` to your `config.py` file.
+Add `config.source('chroma.py')` to your `config.py`
 
 ## tmux
 
