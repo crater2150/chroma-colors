@@ -1,0 +1,141 @@
+* {
+    text-color:            #ffffff;
+    background-color:  transparent;
+    font:        "Menlo for Powerline 10";
+
+    chroma-blue:        #00afff;
+    chroma-lightblue:   #87afff;
+    chroma-orange:      #ffaf5f;
+    chroma-yellow:      #ffd75f;
+    chroma-green:       #87d75f;
+    chroma-red:         #ff0000;
+    chroma-lightred:    #ff5f5f;
+    chroma-white:       #ffffff;
+    chroma-lightgray:   #c6c6c6;
+    chroma-gray:        #8a8a8a;
+    chroma-bggray:      #1c1c1ccc;
+    chroma-lightbggray: #262626cc;
+    chroma-visualgray:  #303030dd;
+    chroma-black:       #000000;
+    chroma-purple:      #9500ff;
+
+    chroma-border:         @chroma-lightblue;
+    chroma-input-fg:       @chroma-white;
+    chroma-prompt-fg:      @chroma-yellow;
+    chroma-selected-fg:    @chroma-lightblue;
+    chroma-message-bg:     @chroma-bggray;
+    chroma-message-fg:     @chroma-white;
+    chroma-urgent-fg:      @chroma-orange;
+}
+
+configuration {
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons: true;
+    scroll-method: 1;
+    fixed-num-lines: false;
+}
+
+#window {
+    location: center;
+    anchor:   north;
+    width: 90%;
+    y-offset: -10%;
+    transparency: "real";
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    spacing: 0;
+    children:  [vertb, mainbox];
+    orientation: horizontal;
+}
+
+#mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+#message {
+    border-color: @chroma-border;
+    border:  0px 1px 1px 1px;
+    padding: 5;
+    background-color: @chroma-message-bg;
+    text-color: @chroma-message-fg;
+}
+#message {
+    font: "Menlo for Powerline 8";
+    color: @chroma-message;
+}
+
+#inputbar {
+    color: @chroma-input-fg;
+    padding: 11px;
+    background-color: @chroma-bggray;
+    border: 1px 1px 1px 1px;
+    border-radius:  15px 15px 0px 0px;
+    border-color: @chroma-border;
+    font: "Menlo for Powerline 18";
+}
+#entry,prompt,case-indicator {
+    text-font: inherit;
+    text-color:inherit;
+}
+#prompt {
+    color: @chroma-prompt-fg;
+    margin:     0px 0.3em 0em 0em ;
+}
+
+#listview {
+    spacing: 0;
+    border-radius: 0px 0px 15px 15px;
+    border: 0px 1px 1px 1px;
+    border-color: @chroma-border;
+    dynamic: true;
+    lines: 10;
+}
+
+#element {
+    padding: 2px;
+    vertical-align: 0.5;
+    font:inherit;
+}
+#element selected.normal {
+    background-color: @chroma-selected-fg;
+}
+#element normal urgent, element alternate urgent {
+    color: @chroma-urgent-fg;
+}
+
+#element normal {
+    background-color: @chroma-bggray;
+}
+
+#element alternate {
+    background-color: @chroma-lightbggray;
+}
+
+#element normal active, element alternate active {
+    color: @chroma-green;
+}
+
+#element selected active {
+    background-color: @chroma-green;
+    color: @chroma-bggray;
+}
+#element selected urgent {
+    background-color: @chroma-urgent-fg;
+    color: @chroma-bggray;
+    foreground: #00FF00;
+}
+#vertb {
+    expand: false;
+    children: [ dummy0, sidebar, dummy1  ];
+}
+#dummy0,  dummy1 {
+    expand: true;
+}
+
+/* vim: set ft=css: */
