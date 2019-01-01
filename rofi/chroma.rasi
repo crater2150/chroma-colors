@@ -1,3 +1,14 @@
+configuration {
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons: true;
+    scroll-method: 1;
+    fixed-num-lines: false;
+}
+
 * {
     text-color:            #ffffff;
     background-color:  transparent;
@@ -26,17 +37,6 @@
     chroma-message-bg:     @chroma-bggray;
     chroma-message-fg:     @chroma-white;
     chroma-urgent-fg:      @chroma-orange;
-}
-
-configuration {
-    display-ssh:    "";
-    display-run:    "";
-    display-drun:   "";
-    display-window: "";
-    display-combi:  "";
-    show-icons: true;
-    scroll-method: 1;
-    fixed-num-lines: false;
 }
 
 #window {
