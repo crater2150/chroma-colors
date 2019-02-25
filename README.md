@@ -58,3 +58,7 @@ want that, the comment at the top contains all color codes used.
 
 Add the lines to `weechat.conf`, replacing any existing `[palette]` or `[color]`
 sections.
+
+## alacritty
+
+Add the lines to `alacritty.yml`, replacing an existing color section.
