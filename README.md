@@ -3,6 +3,10 @@ Chroma color themes
 
 various color themes derived from my vim theme (also linked in here).
 
+[![Screenshot IDEA]](screenshots/intellij.png)
+[![Screenshot urxvt]](screenshots/urxvt.png)
+[![Screenshot weechat]](screenshots/weechat.png)
+
 # Base colors for all themes
 
 | Color name  | RGB-Hex | Term | Foreground preview         | Background preview                                                    |
