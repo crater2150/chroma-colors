@@ -3,9 +3,6 @@ Chroma color themes
 
 various color themes derived from my vim theme (also linked in here).
 
-[![Screenshot IDEA]](screenshots/intellij.png)
-[![Screenshot urxvt]](screenshots/urxvt.png)
-[![Screenshot weechat]](screenshots/weechat.png)
 
 # Base colors for all themes
 
@@ -33,9 +30,17 @@ various color themes derived from my vim theme (also linked in here).
 copy the lines from the `Xresources` file in the corresponding folder to your
 own `.Xresources` or `.Xdefaults`
 
+### Preview
+
+![Screenshot urxvt](screenshots/urxvt.png)
+
 ## intellij
 
 Import via "Editor > Color Scheme > little gear icon > Import Scheme"
+
+### Preview
+
+![Screenshot IDEA](screenshots/intellij.png)
 
 ## (neo)mutt
 
@@ -62,6 +67,10 @@ want that, the comment at the top contains all color codes used.
 
 Add the lines to `weechat.conf`, replacing any existing `[palette]` or `[color]`
 sections.
+
+### Preview
+
+![Screenshot weechat](screenshots/weechat.png)
 
 ## alacritty
 
